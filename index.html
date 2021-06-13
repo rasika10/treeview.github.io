@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Tree View Task</title>
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <!-- Bootstrap -->
+<link rel="stylesheet" href="bootstrap.min.css">
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/tree-table.css">
+  <link rel="stylesheet"
+         href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+   <style>
+     body {
+       font-family: 'Roboto', serif;
+       font-size: 28px;
+       font-weight: lighter;
+     }
+  <style>
+    html,* { font-family: 'Open Sans'; }
+    .container { margin: 150px auto; max-width: 1280px; }
+  </style>
+</head>
+<body>
+</div>
+  <div class="container">
+
+<div class="tree-table-wrap">
+  <table class="tree-table">
+    <thead>
+      <tbody id="table-tree">
+      </tbody>
+    </thead>
+
+  </table>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+<script>
+  var items = [
+        {
+            id: 1,
+            priority: 1,
+            task: 'Task Title',
+            taskd: 'Task Description',
+            subject: ' Status',
+            sentDate: 'Assign Date',
+            assign:'Next Action Date',
+        },
+        {
+            id: 2,
+            priority: 2,
+            task: 'Sub-tasktitle',
+            taskd: 'Sub-taskdescription',
+            subject: 'percentagecompletion',
+            sentDate: '10/06/2021',
+            assign:'13/06/2021',
+            parentId: 1
+        },
+        {
+            id: 2,
+            priority: 3,
+            task: 'Sub-tasktitle',
+            taskd: 'Sub-taskdescription',
+            subject: 'percentagecompletion',
+            sentDate: '10/06/2021',
+            assign:'13/06/2021',
+            parentId: 1
+        },
+        {
+            id: 4,
+            priority: 4,
+            task: 'Sub-tasktitle',
+            taskd: 'Sub-taskdescription',
+            subject: 'percentagecompletion',
+            sentDate: '10/06/2021',
+            assign:'13/06/2021',
+            parentId: 1
+        },
+        {
+            id: 5,
+            priority: 5,
+            task: 'Task Title',
+            taskd: 'Task Description',
+            subject: ' Status',
+            sentDate: 'Assign Date',
+            assign:'Next Action Date',
+        },
+        {
+            id: 6,
+            priority: 6,
+            task: 'Task Title',
+            taskd: 'Task Description',
+            subject: ' Status',
+            sentDate: 'Assign Date',
+            assign:'Next Action Date',
+        },
+        {
+            id: 7,
+            priority: 7,
+            task: 'Sub-tasktitle',
+            taskd: 'Sub-taskdescription',
+            subject: 'percentagecompletion',
+            sentDate: '10/06/2021',
+            assign:'13/06/2021',
+            parentId: 5
+        },
+
+
+        {
+            id: 10,
+            priority: 10,
+            task: 'Sub-tasktitle',
+            taskd: 'Sub-taskdescription',
+            subject: 'percentagecompletion',
+            sentDate: '10/06/2021',
+            assign:'13/06/2021',
+            parentId: 5
+        }
+
+      ];
+      </script>
+      <script type="text/javascript" src="tree-table.js"></script>
+<!-- <script type="text/javascript">
+myFunction(){  var isOpen = $(this).attr('data-is-open');
+  var trsDiv = $('.tree-table').find('tbody tr');
+  var trsArray = $(trsDiv);
+  if (isOpen === '1') {
+      for(var i = 0;i < trsArray.length - 1; i++) {
+          var tempTr = $(trsArray[i]);
+          var trLevel = tempTr.attr('data-level');
+          var trPartLevel = tempTr.attr('data-part-level');
+          var trAllLevel = tempTr.attr('data-all-level');
+          var contain = trAllLevel.split('_')[Number(level)];
+          var curr = partLevel.split('_');
+
+          if (contain && contain === curr[curr.length - 1] && partLevel !== trPartLevel) {
+              tempTr.removeClass('show');
+              tempTr.addClass('hidden');
+              tempTr.addClass('active');
+          }
+      }
+      $(this).text('+');
+}}
+</script> -->
+</body>
+</html>
